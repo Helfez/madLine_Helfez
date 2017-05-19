@@ -1,0 +1,40 @@
+<div>
+	<ul class="position-main">
+
+
+		<!-- <li class="position-item">
+			<div class="logo-container">
+				<img src="img/company.png" alt="无法正常显示" class="company-logo clearfix">
+			</div>
+			<div class="position-information">
+				<h3 class="position-title clearfix">产品经理</h3>
+				<span class="salary right-margin clearfix">8-16K</span>
+				<span class="company">千度</span>
+				<div class="main-position">
+					<p class="condition additionl clearfix">杭州 &nbsp&nbsp西溪&nbsp&nbsp  3-5年&nbsp&nbsp 本科</p>
+					<p class="time additionl clearfix right-margin">3月31号</p>
+					<p class="state additionl clearfix">上市公司  &nbsp&nbsp2000-5000人&nbsp&nbsp  互联网</p>
+				</div>			
+			</div>
+		</li> -->
+
+
+		
+		<li ui-sref="position({id:positionItem.positionId})" class="positionItem" ng-repeat="positionItem in position">
+			<div class="logo-container">
+				<img ng-src="{{positionItem.imgSrc}}" alt="无法正常显示" class="company-logo clearfix">
+			</div>
+			<div class="position-information">
+				<h3 class="position-title clearfix" ng-bind="positionItem.positionName"></h3>
+				<span class="salary g-salary right-margin clearfix" ng-bind="positionItem.salary"></span>
+				<span class="company" ng-bind="positionItem.company"></span>
+				<div class="main-position g-fuzi">
+					<p class="condition clearfix" ng-bind="positionItem.city+'&nbsp&nbsp&nbsp'+positionItem.zone+'&nbsp&nbsp&nbsp'+positionItem.academic"></p>
+					<p class="time clearfix right-margin" ng-bind="positionItem.workerYear"></p>
+					<p class="state clearfix" ng-bind="positionItem.companyState+'&nbsp&nbsp&nbsp'+positionItem.scale+'&nbsp&nbsp&nbsp'+positionItem.industry"></p>
+				</div>			
+			</div>
+		</li>
+
+	</ul>
+</div>

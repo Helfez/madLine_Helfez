@@ -1,0 +1,54 @@
+@import '../variable.less';
+@headerBarheight:1.4rem;
+@footBarheight:1.6rem;
+
+.g-head {
+	background-color: @mainBgColor;
+	width: 100%;
+	height: @headerBarheight;
+	position: fixed;
+	text-align: center;
+	top: 0px;
+	.g-back {
+		height:@headerBarheight;
+		width: @headerBarheight;
+		text-align: center;
+		font-size: 20px;
+		float: left;
+		color: @defaultColor;
+		line-height: @headerBarheight;
+	}
+	.g-title {
+		display: inline-block;
+		margin: 0 auto;
+		position: relative;
+		left: -(@headerBarheight/2);
+		line-height: @headerBarheight;
+		color: @titleColor;
+	}
+}
+
+.g-salary {
+  color: @salaryColor;
+  display: block;
+  font-size:16px;
+}
+
+.g-fuzi{
+  font-size: 10px;
+  color: @positionInformationColor;
+}
+
+.top-zone {
+	position: relative;
+	width: 100%;
+	height:@headerBarheight;
+}
+
+.fix-bottom{
+  background: @defaultColor;
+  height: @footBarheight;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
